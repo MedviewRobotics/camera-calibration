@@ -19,7 +19,7 @@ J1 = rgb2gray(R1);
 J2 = rgb2gray(R2);
 
 %Compute disparity via semiglobal matching
-disparityRange = [144 176];
+disparityRange = [144 160];
 disparityMap = disparity(J1,J2,'DisparityRange',disparityRange,'UniquenessThreshold',30);
 
 %Plot
